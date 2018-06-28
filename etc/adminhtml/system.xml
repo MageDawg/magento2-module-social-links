@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="magedawg" translate="label" sortOrder="10">
+            <label>MageDawg</label>
+        </tab>
+        <section id="socialLinks" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Social Links</label>
+            <tab>magedawg</tab>
+            <resource>MageDawg_SocialLinks::sociallinks_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General Settings</label>
+                <field id="enable_footer" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Social Links Footer</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="accounts" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Account Settings</label>
+                <field id="facebook" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Facebook</label>
+                    <comment><![CDATA[e.g. https://facebook.com/{{YourBusinessName}}]]></comment>
+                </field>
+                <field id="twitter" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Twitter</label>
+                    <comment><![CDATA[e.g. https://twitter.com/{{YourBusinessName}}]]></comment>
+                </field>
+                <field id="linkedin" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>LinkedIn</label>
+                    <comment><![CDATA[e.g. https://www.linkedin.com/in/{{YourBusinessName}}/]]></comment>
+                </field>
+                <field id="googleplus" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Google+</label>
+                    <comment><![CDATA[e.g. https://plus.google.com/u/0/{{user_id}}]]></comment>
+                </field>
+                <field id="youtube" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>YouTube</label>
+                    <comment><![CDATA[e.g. https://www.youtube.com/channel/{{channel_id}}]]></comment>
+                </field>
+                <field id="pinterest" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Pinterest</label>
+                    <comment><![CDATA[e.g. https://www.pinterest.co.uk/{{YourBusinessName}}/]]></comment>
+                </field>
+                <field id="instagram" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Instagram</label>
+                    <comment><![CDATA[e.g. https://www.instagram.com/{{YourBusinessName}}/]]></comment>
+                </field>
+                <field id="flickr" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Flickr</label>
+                    <comment><![CDATA[e.g. https://www.flickr.com/groups/{{YourBusinessName}}/]]></comment>
+                </field>
+                <field id="reddit" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Reddit</label>
+                    <comment><![CDATA[e.g. https://www.reddit.com/r/{{YourBusinessName}}/]]></comment>
+                </field>
+                <field id="github" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>GitHub</label>
+                    <comment><![CDATA[e.g https://github.com/{{YourBusinessName}}]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,33 @@
+{
+    "name": "magedawg/magento2-module-social-links",
+    "description": "MageDawg Social Links Module",
+    "type": "magento2-module",
+    "license": [
+        "proprietary"
+    ],
+    "authors":[
+        {
+            "name":"MageDawg",
+            "email":"magedawg@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "~5.5.0|~5.6.0|~7.0.0",
+        "magento/framework": "100.0.*",
+        "magedawg/magento2-module-core": "dev-master"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "MageDawg\\SocialLinks\\": ""
+        }
+    },
+    "repositories": {
+        "magedawg-core": {
+            "type": "git",
+            "url": "git@github.com/MageDawg/magento2-module-core.git"
+        }
+    }
+}
